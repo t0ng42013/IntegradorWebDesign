@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #1c1c1c;
+}
+
+.header{
+    width: 100%;
+    position: relative;   
+    margin-bottom: 20px;    
+}
+
+.header__nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.nav__content{ 
+    width: 100%;
+}
+
+.nav__content::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #e99403;
+    top: 0;
+    left: 0;     
+    z-index: -1;
+}
+
+.nav__content_top{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__content__img{
+width: 100px;
+height: 70px;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: start;
+}
+
+.nav__content__img img{
+    width: 100%;
+}
+.nav__content__menu{
+    font-size: 48px;
+}
+
+.nav__content__links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav__content__links a:hover{
+    transition: .5s;
+    color: #e99403;
+}
+
+.nav__redes{
+    width: 90%;
+    max-width: 400px;
+    min-height: 40px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav__redes i{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.nav__contact{
+    width: 100%;
+    height: 50px;
+    max-width: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    background-color: #e99403;
+    font-weight: 600;
+}
+
+.btn{
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn:hover{
+transition: .5s;
+transform: scale(1.2);
+}
+
+.nav__content__links,
+.nav__redes,
+.nav__contact,
+input{
+    display: none;
+}
+
+#menu:checked ~ .nav__content .nav__content__links,
+#menu:checked ~ .nav__redes,
+#menu:checked ~ .nav__contact{
+    display: flex;
+}
