@@ -19,24 +19,27 @@
         <input type="checkbox" name="menu" id="menu" />
         <div class="nav__content">
           <div class="nav__content_top">
+            <!-- logo landing -->
             <figure class="nav__content__img">
               <img src="./assets/imgs/logo2.png" alt="Logo" />
             </figure>
+            <!-- btn del menu -->
             <div class="nav__content__menu">
               <label for="menu">
                 <i class="bx bx-menu-alt-left btn"></i>
               </label>
             </div>
           </div>
-
+          <!-- menu navegacion -->
           <ul class="nav__content__links">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Qué hacemos</a></li>
             <li><a href="#">Galería</a></li>
             <li><a href="#">Contacto</a></li>
+            <li><a class="active" href="./login.html">Login</a></li>
           </ul>
         </div>
-
+        <!-- icones redes sociales -->
         <div class="nav__redes">
           <i class="bx bxl-facebook btn"></i>
           <i class="bx bxl-messenger btn"></i>
@@ -44,6 +47,7 @@
           <i class="bx bxl-whatsapp btn"></i>
           <i class="bx bx-envelope btn"></i>
         </div>
+        <!-- btn de contacto -->
         <div class="nav__contact">
           <div class="nav__contact__tel btn">
             <i class="bx bxs-phone"></i>
@@ -54,13 +58,126 @@
     </header>
 
     <main class="main">
-      <div class="main__container">
-        <section></section>
+      <div class="hero__container">
+        <section class="hero__section">
+          <div class="hero__section__content">
+            <h1 class="hero__section__title">
+              Taller mecánico
+              <span class="hero__section__title-highlight">Alonso</span>
+            </h1>
+            <h3 class="hero__section__subtitle">Mecánica General</h3>
+            <p class="hero__section__description">
+              Calidad en servicio automotriz
+            </p>
+            <div class="hero__section__button">
+              <a href="http://" class="hero__section__link btn">Leer Más</a>
+            </div>
+          </div>
+          <!-- carousel de imagenes -->
+          <section class="hero__carousel">
+            <div class="hero__carousel__content">
+              <div class="hero__carousel__item">
+                <img src="./assets/imgs/Sin título-2.jpg" alt="Imagen 1" />
+              </div>
+              <div class="hero__carousel__item">
+                <img src="./assets/imgs/Sin título-3.jpg" alt="Imagen 2" />
+              </div>
+              <div class="hero__carousel__item">
+                <img src="./assets/imgs/Sin título-4.jpg" alt="Imagen 3" />
+              </div>
+            </div>
+          </section>
+        </section>
       </div>
+
+      <!-- Beneficios -->
+      <section class="about__section">
+        <div class="about__section__content">
+          <h2 class="about__section__title">Nosotros</h2>
+
+          <div class="about__section__cards">
+            <div  class="box1">
+              <div class="about__section__card">
+                <img src="./assets/imgs/imagen1.jpg" alt="">
+                <h4 class="about__section__card__title">mecanica general</h4>
+              </div>
+              <div class="about__section__card">
+                <img src="./assets/imgs/imagen2.jpg" alt="">
+                <h4 class="about__section__card__title">Tren delantero</h4>
+              </div>
+              <div class="about__section__card">
+                <img src="./assets/imgs/correa.jpg" alt="">
+                <h4 class="about__section__card__title">correa de distribucion</h4>
+              </div> 
+            </div>
+
+            <div class="box2">
+              <div class="about__section__card">
+                <img src="./assets/imgs/image4.jpg" alt="">
+                <h4 class="about__section__card__title">Frenos</h4>
+              </div> 
+              <div class="about__section__card">
+                <img src="./assets/imgs/imagen5.jpg" alt="">
+                <h4 class="about__section__card__title">Alineado y balanceado</h4>
+              </div> 
+            </div>
+
+            <div class="box3">
+              <div class="about__section__card">
+                <img src="./assets/imgs/imagen6.jpg " alt="">
+                <h4 class="about__section__card__title">Diagnostico</h4>
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__container"></div>
+      <div class="footer__container">
+        <figure class="footer__logo">
+          <img src="./assets/imgs/logo2.png" alt="" />
+        </figure>
+
+        <div class="footer__contact-info">
+          <p class="footer__address">miami-fl|usa</p>
+          <p class="footer__phone">+1(305)123-45678</p>
+          <p class="footer__email">info@mail.com</p>
+
+          <div class="footer__social-media">
+            <div class="foot__redes">
+              <i class="bx bxl-facebook btn"></i>
+              <i class="bx bxl-messenger btn"></i>
+              <i class="bx bxl-instagram btn"></i>
+              <i class="bx bxl-whatsapp btn"></i>
+              <i class="bx bx-envelope btn"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__form">
+          <form action="">
+            <div class="footer__form__input">
+              <div class="footer__form__field">
+                <input type="text" id="name" name="name" placeholder="Nombre" />
+              </div>
+              <div class="footer__form__field">
+                <input type="email" id="email" name="email" placeholder="Email" />
+              </div>
+              <div class="footer__form__field">
+                <input type="tel" id="phone" name="phone" placeholder="Teléfono" />
+              </div>
+            </div>
+            <div class="footer__form__txtBtn">
+              <div class="footer__form__field">
+                <textarea id="message" name="message" rows="5" placeholder="Mensaje"></textarea>
+              </div>
+              <button class="footer__form__field submit" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
