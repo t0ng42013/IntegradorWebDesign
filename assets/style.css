@@ -139,6 +139,25 @@ body {
 /* PORTADA */
 .hero__section {
   width: 100%;  
+  height: 250px;
+
+}
+.hero__section::after{
+  content: '';
+  background: url(https://img.freepik.com/fotos-premium/mecanico-trabajando-garaje-servicio-reparacion_146671-9728.jpg?size=626&ext=jpg&ga=GA1.1.878440869.1683676885&semt=ais); 
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: transparent 125px solid;
+  border-left: #e95f039d 100vw solid;
+  border-bottom: transparent 125px solid; */
+  width: 100%;
+  height: 300px;
+  z-index: -10;
 }
 .hero__section__content {
   width: 90%;
@@ -147,52 +166,55 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start; 
-  background: url();
 }
 .hero__section__title {
   font-size: 36px;
   font-weight: 900; 
 color: #fff;
+filter: drop-shadow(1px 1px 2px black);
 }
 .hero__section__title-highlight {
- color: #e95f03;
-  
+ color: #000000;
+  filter: drop-shadow(1px 1px 2px #fff);
 }
 .hero__section__subtitle {
-color: #e99403;
+color: #818181;
+ filter: drop-shadow(1px 1px 2px #fff);
 }
 .hero__section__description {
   font-size: 16px;
-  color:rgba(192, 192, 192, 1);
+  color: #818181;
   margin-bottom: 20px;
 }
 .hero__section__button {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
-  border: 1px solid #e95f03;
+  border: 1px solid  #fff;
   font-weight: 600;
 }
 .hero__section__link:hover {
-color: #e95f03;
+color: #ff6905;
 }
 .hero__section__link {
   display: inline-block;
   padding:10px 30px;
   transition: .3s;
 }
-
+/* ***** */
 .hero__carousel {
   position: relative;
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
+  width: 100%;  
+  overflow: hidden; 
 }
 
 .hero__carousel__content {
   display: flex;
-  animation: carousel 20s linear infinite alternate;
-  background-color: #fff;
+  width: 100%;
+  background-color: #1c1c1c;
+}
+.hero__carousel__content:hover{
+animation: carousel 20s linear infinite alternate;
 }
 .hero__carousel__item {
   width: 100%;
@@ -209,7 +231,7 @@ padding: 20px;
 }
 /* card */
 .about__section__cards {
-  width: 100%;
+  width: 100vw;
   height: 58vw;
   min-height: 282px;
   display: flex;
@@ -261,9 +283,11 @@ padding: 20px;
 }
 .about__section__card__title {
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: 100%;
-  background: linear-gradient(rgba(23, 23, 23, 0.2), rgba(23, 23, 23, 0.5));
+  background: linear-gradient(rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5));
+  text-align: center;
+
 }
 
 /* 
@@ -413,6 +437,7 @@ height: 700px;
   align-items: center;
   font-weight: 600;
   transition: 0.5s;
+  cursor: pointer;
 }
 .submit:hover {
   background-color: #e95f03;
