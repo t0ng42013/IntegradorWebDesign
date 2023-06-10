@@ -333,6 +333,7 @@ border-radius: 30px;
   width: 100%;
   background: linear-gradient(rgba(23, 23, 23, 0.5), rgba(23, 23, 23, 0.5));
   text-align: center;
+  font-size: 15px;
 }
 
 /* 
