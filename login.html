@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>login | Mecánica Alonso</title>
+    <link rel="stylesheet" href="./assets/login.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
-    
+    <section class="login__conteiner">
+        <div class="login__content">
+            <div class="login__img__container">
+                <figure>
+                    
+                    <img src="./assets/imgs/logo.png" alt="logo">
+                </figure>
+            </div>
+
+            <div class="login__form__container">
+                <form action="">
+                    <div class="form__email">
+                        <label for="email">
+                            <i class='bx bx-envelope'></i>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form__pass">
+                        <label for="password">
+                            <i class='bx bx-lock' ></i>
+                        </label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="form__btn">
+                        <button type="submit">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
