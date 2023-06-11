@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login | Mecánica Alonso</title>
+    <meta name="viewport" content="width=|, initial-scale=1.0" />
+    <title>Sign Up</title>
     <link rel="stylesheet" href="./assets/login.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -15,14 +14,26 @@
     <section class="login__conteiner">
       <div class="login__content">
         <div class="login__title">
-          <a href="./index.html">
+          <a href="./login.html">
             <i class="bx bx-left-arrow-alt"></i>
           </a>
-          <h2>Login</h2>
+          <h2>Sign Up</h2>
         </div>
 
-        <div class="login__form__container">
+        <div class="login__form__container sign__form__container">
           <form action="">
+            <div class="form__email">
+              <label for="name">
+                <i class="bx bx-user"></i>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
             <div class="form__email">
               <label for="email">
                 <i class="bx bx-envelope"></i>
@@ -48,9 +59,12 @@
                 required
               />
             </div>
-            <p class="form__passs">¿Olvidaste tu contraseña?</p>
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms" class="terms">
+              Agree to our <span class="form__passs">Terms & Conditions</span>
+            </label>
 
-            <div class="form__btn">
+            <div class="form__btn sign">
               <button type="submit">
                 <i class="bx bx-right-arrow-alt"></i>
               </button>
@@ -61,7 +75,7 @@
         <div class="login__form__auth">
           <div class="form__auth__title">
             <span>or</span>
-            <span>Login Whith Social Media</span>
+            <span>Sign Up Whith Social Media</span>
           </div>
           <div class="form__auth__social">
             <i class="bx bxl-google-plus-circle"></i>
@@ -70,8 +84,8 @@
         </div>
         <div class="login__form__sign">
           <span>
-            Don´t have an account?<span class="form__sign--strong"
-              ><a href="./sign.html"> Click Here </a></span
+            Already Have an account?<span class="form__sign--strong"
+              ><a href="./login.html"> Click Here </a></span
             >
           </span>
         </div>
