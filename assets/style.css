@@ -99,13 +99,16 @@ padding: 0;
 .nav__content__links a:hover::after{
   transform: scale(1);
   opacity: 1;
-  transition: .5s;
+  transition: .3s;
 }
-.active {
+.active a {
  background-color: #e95f03;
 color: #131313;
-padding: 3px 22px;
+padding: 8px 25px;
 border-radius: 30px;
+}
+.active a:hover{
+  color: #fff;
 }
 .nav__redes {
   width: 90%;
@@ -496,11 +499,4 @@ height: 700px;
   text-align: center;
 }
 
-@keyframes carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-590px);
-  }
-}
+
