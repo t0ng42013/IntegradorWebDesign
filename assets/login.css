@@ -5,7 +5,7 @@
 }
 
 .login__conteiner {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -21,6 +21,9 @@
   width: 90%;
   max-width: 350px;
   position: relative; 
+  border: 3px solid #232323;
+  border-radius: 32px;
+  box-shadow: 2px 2px 2px #232323;
 }
 
 .login__title {
@@ -205,3 +208,4 @@ font-size: 12px;
 form .sign{
   margin-top: 39px;
 }
+
