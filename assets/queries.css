@@ -92,16 +92,18 @@
     position: absolute;
     top: 150px;
     left: 180px;
+    width: 70%;
   }
   .hero__section__button {
     margin: 0;
-    width: 25%;
+    width: 40%;
     max-width: 399px;
   }
 
   .hero__section__title {
     margin-top: 0px;
-    width: 50%;
+    width: 70%;
+    max-width: 435px;
     font-size: 44px;
   }
    .hero__section__description {  
@@ -137,6 +139,10 @@ margin-top: 60px;
 .footer__contact-info {  
   width: 50%;
 }
+.box1,
+.box2{
+  gap:16px
+}
 }
 
 @media (min-width: 970px) {
@@ -146,9 +152,6 @@ margin-top: 60px;
 .hero__section::after {/*foto portada*/
 left: 40%;
 width: 60%;
-}
-.hero__section__title{
-  width: 40%;
 }
 .hero__section__button{
   width: 23%;
@@ -160,6 +163,10 @@ width: 60%;
   margin: auto;
   background: linear-gradient(rgba(23, 23, 23, 0.5), rgb(23, 23, 23));
   font-size: 18px;
+}
+.box1,
+.box2{
+  gap:20px
 }
 }
 
@@ -195,6 +202,13 @@ width: 60%;
 .hero__section__description{
   font-size: 18px;
 letter-spacing: 0.06em;
+}
+.services__section {
+  max-width: 1100px;
+  margin: auto;
+}
+.services__section__cards {
+  width: auto;
 }
 .footer__contact-info{
   width: 30%;
@@ -234,9 +248,7 @@ hr{
     max-width: 300px;
     max-height: 330px;
   }
-  .services__section__cards {
-    max-height: 885px;
-  }
+  
 }
 @keyframes hero {
   0%{
